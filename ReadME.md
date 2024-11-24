@@ -2,12 +2,12 @@
 power output prediction using sklearn, FastAPI and Streamlit App
 
 ## Table of Contents
--[Description](#description)
--[Requirement](#requirement)
--[Getting started](#getting started)
-- [1. Train and save the model](#1-train-and-save-the-model)
-- [2. Deploy FastAPI](#2-deploy-fastapi)
-- [3. Run Streamlit](#3-streamlit)
+- [Description](#description)
+- [Requirement](#requirement)
+- [Getting started](#getting started)
+  - [1. Train and save the model](#1-train-and-save-the-model)
+  - [2. Deploy FastAPI](#2-deploy-fastapi)
+  - [3. Run Streamlit](#3-streamlit)
 - [Usage](#usage)
 - [Endpoints](#endpoints)
 - [Example input and output](#example-inputand-output)
