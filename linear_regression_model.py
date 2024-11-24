@@ -29,6 +29,29 @@ print(y_pred)
 # making the prediction a single data point with AT = 15, V = 40, AP
 print(model.predict([[15, 40, 1000, 75]]))
 
+# R squared
+r2 = r2_score(y_test, y_pred)
+
+# Adjusted R-Sqaured
+k = X_test.shape[1]
+n = X_test.shape[0]
+
+adj_r2 = 1-(1-r2)*(n-1)/(n-k-1)
+
+# Scattered Plot of Actual vs. Predicted Values
+plt.figure(figsize=(8,6))
+plt.scatter(y_test, y_pred, alpha=0.5) # plot actual vs. predicted
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)],color='red',linewidth='2')
+plt.xlabel('actual value')
+plt.ylabel('predicted value')
+plt.title('Actual vs Predicted Values')
+plt.show()
+
+#  save the train model to a .pkl file
+joblib.dump(model, "model/model.pkl")
+
+
+
 
 
 
