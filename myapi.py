@@ -25,15 +25,15 @@ def predict(input_data:  PredictionInput):
             input_data.ambient_temperature,
             input_data.exhaust_vacuum,
             input_data.ambient_pressure,
-            input_data.relative_humdity
+            input_data.relative_humidity
         ]])
 
         # make prediction
-        Prediciton = model.pedict(data)
+        prediction = model.predict(data)
 
         # return the prediction
         return {
-            "Prediction": Prediction[0]
+            "Prediction": prediction[0]
         }
 
 # run the app with uvicorn
