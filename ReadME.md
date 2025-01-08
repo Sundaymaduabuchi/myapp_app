@@ -100,6 +100,24 @@ predicted Power Output (PE) = 465.83
 The project directory is structured as follows:
 
 '''
+📦 linear_regression_app
+├─ data
+│  └─ data.xlsx
+├─ model
+│  └─ model.pkl
+├─ src
+├─ .gitignore
+├─ app.py
+├─ api.py
+├─ linear_regression_model.py
+├─ README.md
+└─ requirements.txt
+'''
+## Power Output Visualization
 
+### Actual vs Predicted Values
+![Training and Validation Loss](src/linear_regression%20img.png))
 
+## License
+This project is licensed under [![License: MIT](...)](...)
 
