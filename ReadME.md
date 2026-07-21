@@ -15,14 +15,9 @@ power output prediction using sklearn, FastAPI and Streamlit App
 - [License](#license)
 
 ## Description
-This project provide an API and a streamlit application for predicting power output (PE) based on environmental factors. The model uses Linear Regression from scikit-Learn, trained on features including: 
-
- - Ambient Temperature (AT)
- - Exhaust Vacuum(V)
- - Ambient Pressure (AP)
- - Relative Humidity (RH)
-
-The API is deployed using FastAPI, and a stream app provides an interactive interface for users to input values and get predictions.
+### Power Output Prediction
+An end-to-end ML application predicting power plant energy output (PE) from environmental readings — ambient temperature, exhaust vacuum, ambient pressure, and relative humidity. Trained a scikit-learn Linear Regression model, served it via a FastAPI /predict endpoint, and built a Streamlit front-end for interactive input and real-time predictions.
+Tools: Python, scikit-learn, FastAPI, Streamlit, Pandas
 
 # Requirements
 To set up and run this project, you'll need the following python packages:
